@@ -1,0 +1,1504 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="pingback" href="https://youreventmarketplace.com/xmlrpc.php">
+
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+	const gtm4wp_use_sku_instead = false;
+	const gtm4wp_id_prefix = '';
+	const gtm4wp_remarketing = false;
+	const gtm4wp_eec = true;
+	const gtm4wp_classicec = false;
+	const gtm4wp_currency = 'USD';
+	const gtm4wp_product_per_impression = false;
+	const gtm4wp_needs_shipping_address = false;
+	const gtm4wp_business_vertical = 'retail';
+	const gtm4wp_business_vertical_id = 'id';
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO Premium plugin v21.0 (Yoast SEO v21.0) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The Marketplace for Event Professionals | YourEventMarketplace</title>
+	<meta name="description" content="Our network of professionals can help make your next live, hybrid, or virtual event a smash hit! Click to start browsing and get started today." />
+	<link rel="canonical" href="https://youreventmarketplace.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home" />
+	<meta property="og:description" content="Our network of professionals can help make your next live, hybrid, or virtual event a smash hit! Click to start browsing and get started today." />
+	<meta property="og:url" content="https://youreventmarketplace.com/" />
+	<meta property="og:site_name" content="YourEventMarketplace" />
+	<meta property="article:modified_time" content="2022-12-05T05:03:59+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://youreventmarketplace.com/","url":"https://youreventmarketplace.com/","name":"The Marketplace for Event Professionals | YourEventMarketplace","isPartOf":{"@id":"https://youreventmarketplace.com/#website"},"about":{"@id":"https://youreventmarketplace.com/#organization"},"datePublished":"2021-05-28T18:21:03+00:00","dateModified":"2022-12-05T05:03:59+00:00","description":"Our network of professionals can help make your next live, hybrid, or virtual event a smash hit! Click to start browsing and get started today.","breadcrumb":{"@id":"https://youreventmarketplace.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://youreventmarketplace.com/"]}]},{"@type":"BreadcrumbList","@id":"https://youreventmarketplace.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://youreventmarketplace.com/#website","url":"https://youreventmarketplace.com/","name":"YourEventMarketplace","description":"Find the Perfect Vendor for your Virtual, Hybrid or Live Event","publisher":{"@id":"https://youreventmarketplace.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://youreventmarketplace.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://youreventmarketplace.com/#organization","name":"YourEventMarketplace","url":"https://youreventmarketplace.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://youreventmarketplace.com/#/schema/logo/image/","url":"https://youreventmarketplace.com/wp-content/uploads/2021/12/YourEvent-version-9-png.png","contentUrl":"https://youreventmarketplace.com/wp-content/uploads/2021/12/YourEvent-version-9-png.png","width":1300,"height":1300,"caption":"YourEventMarketplace"},"image":{"@id":"https://youreventmarketplace.com/#/schema/logo/image/"}}]}</script>
+	<meta name="google-site-verification" content="eo9Z6n8MBisJQGmv66mtPKyl7BZlsZdkypEovGPl21U" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//api.tiles.mapbox.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" type="application/rss+xml" title="YourEventMarketplace &raquo; Feed" href="https://youreventmarketplace.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="YourEventMarketplace &raquo; Comments Feed" href="https://youreventmarketplace.com/comments/feed/" />
+<link rel='preload stylesheet' as='style' onload="this.onload=null;this.rel='stylesheet'" id='wp-block-library-css' href='https://elmmarketplace.wpenginepowered.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-active-filters-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/active-filters.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-add-to-cart-form-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/add-to-cart-form.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-packages-style-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/packages-style.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-all-products-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-products.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-all-reviews-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-reviews.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-attribute-filter-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/attribute-filter.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-breadcrumbs-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/breadcrumbs.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-catalog-sorting-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/catalog-sorting.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-customer-account-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/customer-account.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-featured-category-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-category.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-featured-product-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-product.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-mini-cart-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-price-filter-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/price-filter.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-add-to-cart-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-add-to-cart.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-button-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-button.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-categories-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-categories.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-image-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-image-gallery-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image-gallery.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-query-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-query.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-results-count-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-results-count.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-reviews-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-reviews.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-sale-badge-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sale-badge.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-search-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-search.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-sku-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sku.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-stock-indicator-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-stock-indicator.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-summary-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-summary.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-title-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-title.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-rating-filter-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/rating-filter.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-reviews-by-category-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-category.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-reviews-by-product-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-product.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-product-details-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-details.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-single-product-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-stock-filter-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/stock-filter.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-cart-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-checkout-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout.css?ver=10.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-mini-cart-contents-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-contents.css?ver=10.6.6' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.0.3' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.0.3' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='elementor-icons-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/uploads/elementor/css/post-1.css?ver=1670313517' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-tabs-frontend-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css?ver=2.1.24' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/uploads/elementor/css/global.css?ver=1670313559' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-130-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/uploads/elementor/css/post-130.css?ver=1670313559' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-945-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/uploads/elementor/css/post-945.css?ver=1693454212' type='text/css' media='all' />
+<link rel='preload stylesheet' as='style' onload="this.onload=null;this.rel='stylesheet'" id='mapbox-gl-css' href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css?ver=2.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-mapbox-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/maps/mapbox/mapbox.css?ver=2.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-icons-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/icons.css?ver=2.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-material-icons-css' href='https://fonts.googleapis.com/icon?family=Material+Icons&#038;display=swap&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='select2-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/css/select2.css?ver=8.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-vendor-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/vendor.css?ver=2.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-frontend-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/frontend.css?ver=2.6.7' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-styles-default-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/style.css?ver=6.3.2' type='text/css' media='all' />
+<style id='theme-styles-default-inline-css' type='text/css'>
+:root{}
+</style>
+<link rel='stylesheet' id='child-style-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing-child-lmschulteis/style.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mylisting-dynamic-styles-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/uploads/mylisting-dynamic-styles.css?ver=1671065556' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js?ver=1.18.1' id='gtm4wp-woocommerce-enhanced-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.8.1' id='font-awesome-4-shim-js'></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-19657897-2' id='google_gtagjs-js' async></script>
+<script id="google_gtagjs-js-after" type="text/javascript">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["youreventmarketplace.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-19657897-2", {"anonymize_ip":true});
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://youreventmarketplace.com/wp-json/" /><link rel="alternate" type="application/json" href="https://youreventmarketplace.com/wp-json/wp/v2/pages/130" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://youreventmarketplace.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://youreventmarketplace.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://youreventmarketplace.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoureventmarketplace.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://youreventmarketplace.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyoureventmarketplace.com%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.108.0" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to footer -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"frontpage","pagePostType2":"single-page","pagePostAuthor":"Lisa Schulteis"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M3WC4P2');
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="text/javascript">var MyListing = {"Helpers":{},"Handlers":{},"MapConfig":{"ClusterSize":35,"AccessToken":"pk.eyJ1IjoiZWxlY3RyYWxpbWUiLCJhIjoiY2twN3gzdXJiMDN5ZjJvcGU2aWRoeG14diJ9.VZHoFt0-tFalGQubxqewcA","Language":false,"TypeRestrictions":[],"CountryRestrictions":[],"CustomSkins":{}}};</script><script type="text/javascript">var CASE27 = {"ajax_url":"https:\/\/youreventmarketplace.com\/wp-admin\/admin-ajax.php","login_url":"https:\/\/youreventmarketplace.com\/my-account\/","register_url":"https:\/\/youreventmarketplace.com\/my-account\/?register","mylisting_ajax_url":"\/?mylisting-ajax=1","env":"production","ajax_nonce":"2951b483e9","l10n":{"selectOption":"Select an option","errorLoading":"The results could not be loaded.","removeAllItems":"Remove all items","loadingMore":"Loading more results\u2026","noResults":"No results found","searching":"Searching\u2026","datepicker":{"format":"DD MMMM, YY","timeFormat":"h:mm A","dateTimeFormat":"DD MMMM, YY, h:mm A","timePicker24Hour":false,"firstDay":1,"applyLabel":"Apply","cancelLabel":"Cancel","customRangeLabel":"Custom Range","daysOfWeek":["Su","Mo","Tu","We","Th","Fr","Sa"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"]},"irreversible_action":"This is an irreversible action. Proceed anyway?","delete_listing_confirm":"Are you sure you want to delete this listing?","copied_to_clipboard":"Copied!","nearby_listings_location_required":"Enter a location to find nearby listings.","nearby_listings_retrieving_location":"Retrieving location...","nearby_listings_searching":"Searching for nearby listings...","geolocation_failed":"You must enable location to use this feature.","something_went_wrong":"Something went wrong.","all_in_category":"All in \"%s\"","invalid_file_type":"Invalid file type. Accepted types:","file_limit_exceeded":"You have exceeded the file upload limit (%d)."},"woocommerce":[],"js_field_html_img":"<div class=\"uploaded-file uploaded-image review-gallery-image job-manager-uploaded-file\">\t<span class=\"uploaded-file-preview\">\t\t\t\t\t<span class=\"job-manager-uploaded-file-preview\">\t\t\t\t<img src=\"\">\t\t\t<\/span>\t\t\t\t<a class=\"remove-uploaded-file review-gallery-image-remove job-manager-remove-uploaded-file\"><i class=\"mi delete\"><\/i><\/a>\t<\/span>\t<input type=\"hidden\" class=\"input-text\" name=\"\" value=\"b64:\"><\/div>","js_field_html":"<div class=\"uploaded-file  review-gallery-image job-manager-uploaded-file\">\t<span class=\"uploaded-file-preview\">\t\t\t\t\t<span class=\"job-manager-uploaded-file-name\">\t\t\t\t<i class=\"mi insert_drive_file uploaded-file-icon\"><\/i>\t\t\t\t<code><\/code>\t\t\t<\/span>\t\t\t\t<a class=\"remove-uploaded-file review-gallery-image-remove job-manager-remove-uploaded-file\"><i class=\"mi delete\"><\/i><\/a>\t<\/span>\t<input type=\"hidden\" class=\"input-text\" name=\"\" value=\"b64:\"><\/div>"};</script>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<!-- Google AdSense snippet added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense snippet added by Site Kit -->
+<!-- Global site tag (gtag.js) - Google Ads: 10857224692 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10857224692"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10857224692');
+</script>
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
+<!-- Google AdSense snippet added by Site Kit -->
+<script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7620436168256185&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous" type="text/javascript"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<link rel="icon" href="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/favicon-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://youreventmarketplace.com/wp-content/uploads/2021/05/favicon-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			.h2, h2 {
+    font-size: 28px;
+}		</style>
+		<style type="text/css" id="mylisting-element-queries">.featured-search[max-width~="1000px"] .form-group, .featured-search .filter-count-3 .form-group { width: calc(33.3% - 12px); margin-right: 18px; } .featured-search[max-width~="1000px"] .form-group:nth-child(3n), .featured-search .filter-count-3 .form-group:nth-child(3n) { margin-right: 0; } .featured-search[max-width~="750px"] .form-group, .featured-search .filter-count-2 .form-group { width: calc(50% - 5px); margin-right: 10px !important; } .featured-search[max-width~="750px"] .form-group:nth-child(2n), .featured-search .filter-count-2 .form-group:nth-child(2n) { margin-right: 0 !important; } .featured-search[max-width~="550px"] .form-group, .featured-search .filter-count-1 .form-group { width: 100%; margin-right: 0 !important; } </style><style type="text/css" id="mylisting-typography">.i-nav > ul > li{font-size:16px;}.blogpost-section .section-body p, .blogpost-section .section-body ul, .blogpost-section .section-body p, .blogpost-section .section-body ol{font-size:16px;font-weight:400 !important;color:#333333;}.c27-content-wrapper h1,.c27-content-wrapper h2,.c27-content-wrapper h3,
+                .c27-content-wrapper h4, .c27-content-wrapper h5, .c27-content-wrapper h6{color:#333333;}.c27-content-wrapper h1{font-size:40px;font-weight:600 !important;}.c27-content-wrapper h2{font-size:28px;font-weight:500 !important;}</style></head>
+<body class="home page-template-default page page-id-130 theme-my-listing woocommerce-no-js my-listing elementor-default elementor-kit-1 elementor-page elementor-page-130">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+
+<div id="c27-site-wrapper"><div class="loader-bg main-loader site-logo-loader" style="background-color: #4f4d9b;">
+	<img width="1024" height="263" src="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/12/youreventmarketplace_vers1-1024x263.png" alt="YourEventMarketplace">
+</div>
+
+<header class="c27-main-header header header-style-default header-dark-skin header-scroll-dark-skin hide-until-load header-scroll-hide header-menu-right">
+	<div class="header-skin"></div>
+	<div class="header-container">
+		<div class="header-top container-fluid">
+			<div class="header-left">
+			<div class="mobile-menu">
+				<a href="#main-menu">
+					<div class="mobile-menu-lines"><i class="mi menu"></i></div>
+				</a>
+			</div>
+			<div class="logo">
+									
+					<a href="https://youreventmarketplace.com/" class="static-logo">
+                        
+						<img  style="margin-top: 5%;margin: right 0px " src="WhatsApp Image 2023-12-11 at 23.15.56_54c20b89.jpg"
+							alt="">
+                            <h2 style="color: white;">VENUEVISTA</h2>
+					</a>
+                    
+							</div>
+						</div>
+			<div class="header-center">
+			<div class="i-nav">
+				<div class="mobile-nav-head">
+					<div class="mnh-close-icon">
+						<a href="#close-main-menu">
+							<i class="mi menu"></i>
+						</a>
+					</div>
+
+									</div>
+
+                                    
+					<ul id="menu-main" class="main-menu main-nav"><li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-130 current_page_item menu-item-204" style="margin-left: 0%;"><a href="https://youreventmarketplace.com/" aria-current="page">HOME</a></li>
+<li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="https://youreventmarketplace.com/explore/">FIND A VENDOR</a></li>
+<li id="menu-item-247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a href="https://youreventmarketplace.com/add-listing/">LIST YOUR BUSINESS</a></li>
+<li id="menu-item-960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960"><a href="https://youreventmarketplace.com/news/">EVENT INDUSTRY NEWS</a></li>
+<li id="menu-item-961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-961"><a href="#">ABOUT</a>
+<div class="submenu-toggle"><i class="material-icons">arrow_drop_down</i></div><ul class="sub-menu i-dropdown">
+	<li id="menu-item-962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-962"><a href="https://youreventmarketplace.com/contact/">CONTACT US</a></li>
+</ul>
+</li>
+</ul>
+					<div class="mobile-nav-button">
+						<div class="header-button">
+	<a href="https://youreventmarketplace.com/add-listing/" class="buttons button-1">
+		<i class="icon-add-circle-1"></i> Add a listing	</a>
+</div>					</div>
+				</div>
+				<div class="i-nav-overlay"></div>
+				</div>
+			<div class="header-right">
+									<div class="user-area signin-area">
+						<i class="mi person user-area-icon"></i>
+						<a href="https://youreventmarketplace.com/my-account/">
+							Sign in						</a>
+													<span>or</span>
+							<a href="https://youreventmarketplace.com/my-account/?register">
+								Register							</a>
+											</div>
+					<div class="mob-sign-in">
+						<a href="https://youreventmarketplace.com/my-account/"><i class="mi person"></i></a>
+					</div>
+
+											
+<a class="view-cart-contents" href="#" type="button" id="user-cart-menu" data-toggle="modal" data-target="#wc-cart-modal" title="View your shopping cart">
+	<span class="mi shopping_basket"></span>
+	<i class="header-cart-counter counter-hidden" data-count="0">
+		<span>0</span>
+	</i>
+</a>									
+				<div class="header-button">
+	<a href="https://youreventmarketplace.com/add-listing/" class="buttons button-1">
+		<i class="icon-add-circle-1"></i> Add a listing	</a>
+</div>
+							</div>
+		</div>
+	</div>
+</header>
+
+
+
+		<div data-elementor-type="wp-page" data-elementor-id="130" class="elementor elementor-130">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-2woam06 elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="2woam06" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9b1306f" data-id="9b1306f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cc73ae3 elementor-widget elementor-widget-heading" data-id="cc73ae3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">The Marketplace for<br>Event Professionals</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b3f1925 elementor-widget elementor-widget-heading" data-id="b3f1925" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Find the right agency, vendor or service provider for your next hybrid, live or virtual event.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-79dcf17 elementor-widget elementor-widget-case27-basic-search-widget" data-id="79dcf17" data-element_type="widget" data-widget_type="case27-basic-search-widget.default">
+				<div class="elementor-widget-container">
+			
+<div class="mylisting-basic-form text-center" :class="tabMode==='dark'?'featured-light':tabMode"
+	data-listing-types="{&quot;directory&quot;:{&quot;id&quot;:143,&quot;name&quot;:&quot;Directory&quot;,&quot;icon&quot;:&quot;mi apps&quot;,&quot;slug&quot;:&quot;directory&quot;,&quot;filters&quot;:{&quot;search_keywords&quot;:&quot;&quot;,&quot;category&quot;:&quot;&quot;,&quot;search_location&quot;:&quot;&quot;,&quot;lat&quot;:false,&quot;lng&quot;:false}}}"
+	data-config="{&quot;form_id&quot;:&quot;sform-imDH3&quot;,&quot;tabs_mode&quot;:&quot;transparent&quot;,&quot;types_display&quot;:&quot;tabs&quot;,&quot;box_shadow&quot;:false,&quot;target_url&quot;:&quot;https:\/\/youreventmarketplace.com\/explore\/&quot;}"
+	v-cloak>
+	<div class="featured-search wide">
+		<div class="fs-tabs">
+							<ul class="nav nav-tabs cts-carousel" role="tablist">
+					<li v-for="listingType, key in types" role="presentation" :class="activeType.id===listingType.id?'active':''">
+						<a role="tab" @click="activeType=listingType">
+							<i :class="listingType.icon"></i>
+							{{ listingType.name }}
+						</a>
+					</li>
+					<li class="cts-prev">prev</li>
+					<li class="cts-next">next</li>
+				</ul>
+			
+			<div class="tab-content" :class="boxShadow?'add-box-shadow':''">
+									<div role="tabpanel" class="tab-pane fade in filter-count-4"
+						:class="activeType.id===143?'active':''">
+
+						<form method="GET">
+							
+															
+<wp-search-filter
+    listing-type="directory"
+    filter-key="search_keywords"
+    location="basic-form"
+    label="What are you looking for?"
+    @input="filterChanged"
+    inline-template
+>
+    <div v-if="location === 'primary-filter'" class="explore-head-search">
+        <i class="mi search"></i>
+        <input required ref="input" type="text" :placeholder="label"
+            :value="filters[filterKey]" @input="updateInput">
+    </div>
+    <div v-else class="form-group explore-filter wp-search-filter md-group">
+        <input required ref="input" type="text"
+            :value="filters[filterKey]" @input="updateInput">
+        <label>{{label}}</label>
+    </div>
+</wp-search-filter>
+															
+<dropdown-hierarchy-filter
+    listing-type="directory"
+    filter-key="category"
+    location="basic-form"
+    label="All categories"
+    pre-selected="[]"
+    ajax-params="{&quot;taxonomy&quot;:&quot;job_listing_category&quot;,&quot;listing-type-id&quot;:143,&quot;orderby&quot;:&quot;name&quot;,&quot;order&quot;:&quot;ASC&quot;,&quot;hide_empty&quot;:&quot;yes&quot;,&quot;term-value&quot;:&quot;slug&quot;,&quot;parent&quot;:0}"
+    @input="filterChanged"
+    inline-template
+>
+    <div class="cts-term-hierarchy form-group md-group">
+        <input type="text" required ref="input" data-placeholder=" "
+            class="hide"
+            :data-template="location==='advanced-form'?'default':'alternate'"
+            :data-selected="preSelected"
+            :data-mylisting-ajax-params="ajaxParams"
+            @termhierarchy:change="handleChange"
+        >
+        <label>{{label}}</label>
+    </div>
+</dropdown-hierarchy-filter>															
+<location-filter
+    listing-type="directory"
+    filter-key="search_location"
+    location="basic-form"
+    label="Location"
+    @input="filterChanged"
+    inline-template
+>
+    <div v-if="location === 'primary-filter'" class="explore-head-search ehs-location">
+        <i class="mi search"></i>
+        <input required ref="input" type="text" :placeholder="label" :value="filters[filterKey]"
+			@autocomplete:change="handleAutocomplete">
+    	<i class="material-icons geocode-location" @click="updateWithUserLocation">my_location</i>
+    </div>
+    <div v-else class="form-group location-wrapper explore-filter location-filter md-group">
+        <input required ref="input" type="text" placeholder=" " :value="filters[filterKey]"
+			@autocomplete:change="handleAutocomplete">
+    	<i class="material-icons geocode-location" @click="updateWithUserLocation">my_location</i>
+        <label>{{label}}</label>
+    </div>
+</location-filter>
+							
+							<div class="form-group">
+								<button class="buttons button-2 search" @click.prevent="submit">
+									<i class="material-icons">search</i>
+									Search								</button>
+							</div>
+						</form>
+					</div>
+							</div>
+		</div>
+	</div>
+</div>
+		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5aa371c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5aa371c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-31e0a5d" data-id="31e0a5d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8569599 elementor-align-center elementor-widget elementor-widget-button" data-id="8569599" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://youreventmarketplace.com/explore/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Find a Provider</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7ef4002" data-id="7ef4002" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-02a61be elementor-align-center elementor-widget elementor-widget-button" data-id="02a61be" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://youreventmarketplace.com/add-listing/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">List Your Business</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-e4a9425 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e4a9425" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ff64ac7" data-id="ff64ac7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8c0a2f2 elementor-widget elementor-widget-heading" data-id="8c0a2f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">What Type of Event Are You Planning?</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0a96159 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0a96159" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-182b4cf" data-id="182b4cf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d0f9358 elementor-align-center elementor-widget__width-inherit elementor-widget elementor-widget-button" data-id="d0f9358" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/explore/?service-type=virtual-events&#038;sort=a-z" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Virtual Event</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-83b9dd2" data-id="83b9dd2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-74cd893 elementor-align-center elementor-widget elementor-widget-button" data-id="74cd893" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/explore/?service-type=hybrid-events&#038;sort=a-z" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Hybrid Event</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2a36776" data-id="2a36776" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bb60b23 elementor-align-center elementor-widget elementor-widget-button" data-id="bb60b23" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/explore/?service-type=live-events&#038;sort=a-z" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Live Event</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d1b35fa elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1b35fa" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1870c31" data-id="1870c31" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b7a67c6 elementor-widget elementor-widget-heading" data-id="b7a67c6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Popular Categories</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-27de751 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="27de751" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-fafee62" data-id="fafee62" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/event-platforms\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2ad434d elementor-widget elementor-widget-heading" data-id="2ad434d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/event-platforms/">Event Platforms</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-329e326" data-id="329e326" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/av-production\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9d0b7c7 elementor-widget elementor-widget-heading" data-id="9d0b7c7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/av-production/">AV & Production</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7022200" data-id="7022200" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/venues\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-95fcaf0 elementor-widget elementor-widget-heading" data-id="95fcaf0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/venues/">Venues</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-a3eb56d" data-id="a3eb56d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/planning-design\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-167fd5a elementor-widget elementor-widget-heading" data-id="167fd5a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/explore/?category=planning-design&#038;sort=a-z">Event Strategy, Planning & Design</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-09da0b6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="09da0b6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c0ee102" data-id="c0ee102" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/speakers-emcees\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f0a0467 elementor-widget elementor-widget-heading" data-id="f0a0467" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/speakers-emcees/">Speakers & Emcees</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1833165" data-id="1833165" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/photography-videography\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f376bc3 elementor-widget elementor-widget-heading" data-id="f376bc3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/photography-videography/">Photography & Videography</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d237b67" data-id="d237b67" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/design-decor\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e324298 elementor-widget elementor-widget-heading" data-id="e324298" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/design-decor/">Design & Decor</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-814f896" data-id="814f896" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/health-screening-services\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+								<div class="elementor-element elementor-element-888421d elementor-widget elementor-widget-heading" data-id="888421d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/health-screening-services/">Health Screening Services</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-e702c62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e702c62" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-0297753" data-id="0297753" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/event-activities\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1644fbe elementor-widget elementor-widget-heading" data-id="1644fbe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/event-activities/">Event Activities</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d2e37b8" data-id="d2e37b8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/tastings\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6fd10b5 elementor-widget elementor-widget-heading" data-id="6fd10b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/tastings/">Tastings</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1cef8f4" data-id="1cef8f4" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/event-entertainment\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c733a76 elementor-widget elementor-widget-heading" data-id="c733a76" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/explore/?category=event-entertainment&#038;sort=a-z">Event Entertainment</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-21e837f" data-id="21e837f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/food-beverage\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+								<div class="elementor-element elementor-element-28c2f39 elementor-widget elementor-widget-heading" data-id="28c2f39" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/explore/?category=food-beverage&#038;sort=a-z">Food, Beverage & Catering Services</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8a65067 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8a65067" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b6b3494" data-id="b6b3494" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/gifts-promotional-products\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-98384d4 elementor-widget elementor-widget-heading" data-id="98384d4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/explore/?category=gifts-promotional-products&#038;sort=a-z">Gifts & Promotional Products</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ab86190" data-id="ab86190" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/signage-printing\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+								<div class="elementor-element elementor-element-95c0f54 elementor-widget elementor-widget-heading" data-id="95c0f54" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/signage-printing/">Signage & Printing</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-9e730f4" data-id="9e730f4" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/staffing\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2545665 elementor-widget elementor-widget-heading" data-id="2545665" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/staffing/">Staffing</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b77a5e1" data-id="b77a5e1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-mylisting-link-to="{&quot;url&quot;:&quot;\/category\/transportation-companies\/&quot;,&quot;is_external&quot;:false,&quot;nofollow&quot;:false,&quot;custom_attributes&quot;:&quot;&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b660944 elementor-widget elementor-widget-heading" data-id="b660944" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><a href="/category/transportation-companies/">Transportation</a></h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-38ed146 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="38ed146" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb6b271" data-id="bb6b271" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e25342c elementor-widget elementor-widget-heading" data-id="e25342c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl"><a href="https://youreventmarketplace.com/news/">Recent Articles</a></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a7cf073 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-posts" data-id="a7cf073" data-element_type="widget" data-settings="{&quot;cards_columns&quot;:&quot;3&quot;,&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-supplier-showcase-series">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://youreventmarketplace.com/news/supplier-showcase-series-with-lauren-davis-of-billy-bobs-texas/" ><div class="elementor-post__thumbnail"><picture><source srcset="https://youreventmarketplace.com/wp-content/uploads/2022/03/bbt-wall-300x225.jpg.webp"  type="image/webp"><img fetchpriority="high" width="300" height="225" src="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-300x225.jpg" class="attachment-medium size-medium" alt="Billy Bob&#039;s Texas" decoding="async" srcset="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-300x225.jpg 300w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-600x450.jpg 600w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-1024x768.jpg 1024w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-768x576.jpg 768w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall-1536x1152.jpg 1536w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/03/bbt-wall.jpg 2000w" sizes="(max-width: 300px) 100vw, 300px" data-eio="p" /></picture></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://youreventmarketplace.com/news/supplier-showcase-series-with-lauren-davis-of-billy-bobs-texas/" >
+				Supplier Showcase Series with Lauren Davis of Billy Bob&#8217;s Texas			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>If you are looking for a unique event venue in the Dallas-Ft. Worth area, consider Billy Bob&#8217;s Texas! Not only are they the largest honky</p>
+		</div>
+		
+		<a class="elementor-post__read-more" href="https://youreventmarketplace.com/news/supplier-showcase-series-with-lauren-davis-of-billy-bobs-texas/" >
+			Read More »		</a>
+
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-1211 post type-post status-publish format-standard has-post-thumbnail hentry category-supplier-showcase-series">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://youreventmarketplace.com/news/supplier-showcase-series-connie-cay-santos-with-engamio/" ><div class="elementor-post__thumbnail"><picture><source srcset="https://youreventmarketplace.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--300x75.png.webp"  type="image/webp"><img width="300" height="75" src="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--300x75.png" class="attachment-medium size-medium" alt="engamio" decoding="async" srcset="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--300x75.png 300w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--600x150.png 600w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--1024x255.png 1024w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--768x192.png 768w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner--1536x383.png 1536w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/Engamio-Blog-Banner-.png 1780w" sizes="(max-width: 300px) 100vw, 300px" data-eio="p" /></picture></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://youreventmarketplace.com/news/supplier-showcase-series-connie-cay-santos-with-engamio/" >
+				Supplier Showcase Series: Connie Cay-Santos with Engamio			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>One of the hottest topics in events is how to engage your audience. Join me as I chat with Connie Cay-Santos, of Engamio about their</p>
+		</div>
+		
+		<a class="elementor-post__read-more" href="https://youreventmarketplace.com/news/supplier-showcase-series-connie-cay-santos-with-engamio/" >
+			Read More »		</a>
+
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-1147 post type-post status-publish format-standard has-post-thumbnail hentry category-virtual-event-news">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://youreventmarketplace.com/news/how-to-leverage-virtual-team-building-retreats-for-employee-retention/" ><div class="elementor-post__thumbnail"><picture><source srcset="https://youreventmarketplace.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-300x225.jpg.webp"  type="image/webp"><img width="300" height="225" src="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-300x225.jpg" class="attachment-medium size-medium" alt="a laptop with a video conference" decoding="async" srcset="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-300x225.jpg 300w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-600x450.jpg 600w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-1024x768.jpg 1024w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-768x576.jpg 768w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-1536x1152.jpg 1536w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2022/02/chris-montgomery-smgTvepind4-unsplash-1-2048x1536.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" data-eio="p" /></picture></div></a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://youreventmarketplace.com/news/how-to-leverage-virtual-team-building-retreats-for-employee-retention/" >
+				How to Leverage Virtual Team Building Retreats for Employee Retention			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Team Building events continue to be part of the employee retention playbook for companies of all sizes and in 2022, producing team building events means</p>
+		</div>
+		
+		<a class="elementor-post__read-more" href="https://youreventmarketplace.com/news/how-to-leverage-virtual-team-building-retreats-for-employee-retention/" >
+			Read More »		</a>
+
+				</div>
+					</div>
+		</article>
+				</div>
+		
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c2a667e elementor-align-center elementor-widget elementor-widget-button" data-id="c2a667e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="/news/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Read More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7ff35b4 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ff35b4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c2c57c" data-id="7c2c57c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6f7ed2d elementor-widget elementor-widget-heading" data-id="6f7ed2d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-xl">Listings we recommend you visit</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cdd5f5b elementor-widget elementor-widget-heading" data-id="cdd5f5b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Handpicked by our team</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f4b5eea elementor-widget elementor-widget-case27-listing-feed-widget" data-id="f4b5eea" data-element_type="widget" data-widget_type="case27-listing-feed-widget.default">
+				<div class="elementor-widget-container">
+			
+	<section class="i-section listing-feed ">
+		<div class="container-fluid">
+			<div class="row section-body grid">
+									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item"><div
+    class="lf-item-container listing-preview type-directory lf-type-2 post-12514 job_listing type-job_listing status-publish hentry job_listing_category-event-platforms region-global region-united-states service-type-hybrid-events service-type-virtual-events job_position_featured c27-verified has-logo has-tagline has-info-fields level-featured priority-1"
+    data-id="listing-id-12514"
+    data-latitude="34.098283"
+    data-longitude="-118.331607"
+    data-category-icon="			&lt;i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #4f4d9b; &quot;&gt;&lt;/i&gt;
+		"
+    data-category-color="#4f4d9b"
+    data-category-text-color="#fff"
+    data-thumbnail="https://youreventmarketplace.com/wp-content/uploads/listing-uploads/logo/2023/06/logo_circle-150x150.png"
+    data-template="alternate"
+>
+<div class="lf-item lf-item-alternate" data-template="alternate">
+    <a href="https://youreventmarketplace.com/listing/eventuall-ai/">
+
+        <div class="overlay" style="
+    background-color: #242429;
+    opacity: 0.4;
+"></div>
+        
+                    <div class="lf-background" style="background-image: url('https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/marketplace-placeholder-2.png');"></div>
+        
+        <div class="lf-item-info-2">
+                            <div class="lf-avatar" style="background-image: url('https://elmmarketplace.wpenginepowered.com/wp-content/uploads/listing-uploads/logo/2023/06/logo_circle-150x150.png')"></div>
+            
+            <h4 class="case27-secondary-text listing-preview-title">
+                Eventuall.ai                                    <img width="560" height="560" decoding="async" class="verified-listing" src="https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/images/tick.svg">
+                            </h4>
+
+                            <h6>Eventuall is a virtual and hybrid event platform, founded by veterans at creating digital experiences &amp;&hellip;</h6>
+            
+            
+<ul class="lf-contact">
+	</ul>
+        </div>
+
+        <div class="lf-head level-featured">
+            <div class="lf-head-btn ad-badge" data-toggle="tooltip" data-placement="bottom"
+            data-original-title="Featured">
+            <span><i class="icon-flash"></i></span>
+        </div>
+    
+    </div>    </a>
+
+    </div>
+
+        <div class="listing-details c27-footer-section">
+            <ul class="c27-listing-preview-category-list">
+                <li>
+                    <a href="https://youreventmarketplace.com/category/event-platforms/">
+                        <span class="cat-icon" style="background-color: #4f4d9b;">
+                            			<i class="mi bookmark_border" style="color: #fff; "></i>
+		                        </span>
+                        <span class="category-name">Event Platforms</span>
+                    </a>
+                </li>
+
+                            </ul>
+
+            <div class="ld-info">
+                <ul>
+                                            <li class="item-preview" data-toggle="tooltip" data-placement="top" data-original-title="Quick view">
+    <a href="#" type="button" class="c27-toggle-quick-view-modal" data-id="12514">
+    	<i class="mi zoom_in"></i>
+    </a>
+</li>                                                                <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark">
+    <a class="c27-bookmark-button "
+       data-listing-id="12514" onclick="MyListing.Handlers.Bookmark_Button(event, this)">
+       <i class="mi favorite_border"></i>
+    </a>
+</li>                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item"><div
+    class="lf-item-container listing-preview type-directory lf-type-2 post-275 job_listing type-job_listing status-publish hentry job_listing_category-av-production job_listing_category-planning-design region-global service-type-hybrid-events service-type-live-events service-type-virtual-events job_position_featured c27-verified has-logo has-tagline has-info-fields level-featured priority-1"
+    data-id="listing-id-275"
+    data-latitude="33.262206"
+    data-longitude="-111.720574"
+    data-category-icon="			&lt;i class=&quot;mi bookmark_border&quot; style=&quot;color: #fff; background: #4f4d9b; &quot;&gt;&lt;/i&gt;
+		"
+    data-category-color="#4f4d9b"
+    data-category-text-color="#fff"
+    data-thumbnail="https://youreventmarketplace.com/wp-content/uploads/2021/05/logo-only_clean_400px-150x150.png"
+    data-template="alternate"
+>
+<div class="lf-item lf-item-alternate" data-template="alternate">
+    <a href="https://youreventmarketplace.com/listing/electralime-marketing-llc/">
+
+        <div class="overlay" style="
+    background-color: #242429;
+    opacity: 0.4;
+"></div>
+        
+                    <div class="lf-background" style="background-image: url('https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/events-header-768x293.jpeg');"></div>
+        
+        <div class="lf-item-info-2">
+                            <div class="lf-avatar" style="background-image: url('https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/05/logo-only_clean_400px-150x150.png')"></div>
+            
+            <h4 class="case27-secondary-text listing-preview-title">
+                ElectraLime Marketing, LLC                                    <img width="560" height="560" decoding="async" class="verified-listing" src="https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/images/tick.svg">
+                            </h4>
+
+                            <h6>Translating the Live Event Experience to the Online Event World</h6>
+            
+            
+<ul class="lf-contact">
+	            <li >
+            	                	<i class="icon-phone-outgoing sm-icon"></i>
+            	                480-427-5850            </li>
+                    <li >
+            	                	<i class="mi email sm-icon"></i>
+            	                events@electralime.com             </li>
+        </ul>
+        </div>
+
+        <div class="lf-head level-featured">
+            <div class="lf-head-btn ad-badge" data-toggle="tooltip" data-placement="bottom"
+            data-original-title="Featured">
+            <span><i class="icon-flash"></i></span>
+        </div>
+    
+    </div>    </a>
+
+    </div>
+
+        <div class="listing-details c27-footer-section">
+            <ul class="c27-listing-preview-category-list">
+                <li>
+                    <a href="https://youreventmarketplace.com/category/av-production/">
+                        <span class="cat-icon" style="background-color: #4f4d9b;">
+                            			<i class="mi bookmark_border" style="color: #fff; "></i>
+		                        </span>
+                        <span class="category-name">AV &amp; Production</span>
+                    </a>
+                </li>
+
+                                    <li data-toggle="tooltip" data-placement="top" data-original-title="Event Strategy | Planning &amp; Design" data-html="true">
+                        <div class="categories-dropdown dropdown c27-more-categories">
+                            <a href="#other-categories">
+                                <span class="cat-icon cat-more">+1</span>
+                            </a>
+                        </div>
+                    </li>
+                            </ul>
+
+            <div class="ld-info">
+                <ul>
+                                            <li class="item-preview" data-toggle="tooltip" data-placement="top" data-original-title="Quick view">
+    <a href="#" type="button" class="c27-toggle-quick-view-modal" data-id="275">
+    	<i class="mi zoom_in"></i>
+    </a>
+</li>                                                                <li data-toggle="tooltip" data-placement="top" title="" data-original-title="Bookmark">
+    <a class="c27-bookmark-button "
+       data-listing-id="275" onclick="MyListing.Handlers.Bookmark_Button(event, this)">
+       <i class="mi favorite_border"></i>
+    </a>
+</li>                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>							</div>
+		</div>
+	</section>
+
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+</div>		<div data-elementor-type="footer" data-elementor-id="945" class="elementor elementor-945 elementor-location-footer">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-406f0e71 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="406f0e71" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-56cc472" data-id="56cc472" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4c85182 elementor-widget elementor-widget-image" data-id="4c85182" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<picture><source srcset="https://youreventmarketplace.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1.png.webp"  type="image/webp"><img width="835" height="607" src="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1.png" class="attachment-large size-large" alt="YourEventMarketplace" loading="lazy" srcset="https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1.png 835w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1-600x436.png 600w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1-300x218.png 300w, https://elmmarketplace.wpenginepowered.com/wp-content/uploads/2021/10/youreventmarketplace_stacked_vers1-768x558.png 768w" sizes="(max-width: 835px) 100vw, 835px" data-eio="p" /></picture>															</div>
+				</div>
+				<div class="elementor-element elementor-element-ba85caf elementor-widget elementor-widget-heading" data-id="ba85caf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small">The Marketplace for<br>Event Professionals</h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-50b0665a" data-id="50b0665a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-29ad39b elementor-widget elementor-widget-spacer" data-id="29ad39b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1c83cea elementor-widget elementor-widget-heading" data-id="1c83cea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Popular Searches</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c2a5d7d elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c2a5d7d" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/explore/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text"><span style="color:#8FB0FD">Find A Vendor</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/live-events/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Live Events</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/hybrid-events/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Hybrid Events</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/virtual-events/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Virtual Events</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7e98be83" data-id="7e98be83" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6c33510 elementor-widget elementor-widget-spacer" data-id="6c33510" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-03a955d elementor-widget elementor-widget-heading" data-id="03a955d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Vendor Professionals</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae24227 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ae24227" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/add-listing/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text"><span style="color:#8FB0FD">List Your Business</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/claim-your-business/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Claim Your Business</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/advertise-with-us/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Advertise with Us</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-6b043a5e" data-id="6b043a5e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b8caab7 elementor-widget elementor-widget-spacer" data-id="b8caab7" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ab118d elementor-widget elementor-widget-heading" data-id="2ab118d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">The Fun Stuff</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b073cbc elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b073cbc" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/contact/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text"><span style="color:#8FB0FD">Contact Us Today</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Terms of Use</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/privacy-policy/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/sitemap/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+										<span class="elementor-icon-list-text">Sitemap</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-19bc4204" data-id="19bc4204" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-112f9ab elementor-widget elementor-widget-text-editor" data-id="112f9ab" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><div class="options" style="--tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-size: 14px; display: block; position: absolute; top: 1px; right: -28px; margin-top: 2px; width: initial; background-color: rgb(78, 84, 104); border-radius: 0px 3px 3px 0px; z-index: 2; color: rgb(255, 255, 255); font-family: arial, helvetica, sans; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></div></p><div id="ember1508" class="_form-title forms_form_inspect-able ember-view" style="--tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-size: 12px; position: relative; display: block; line-height: 22px; font-weight: 600; margin-bottom: 0px; color: rgb(255, 255, 255); font-family: arial, helvetica, sans; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 30, 63); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Stay up-to-date with industry news, case studies and events.</div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-630d062 elementor-widget elementor-widget-html" data-id="630d062" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "3171845",
+    formId: "59882c00-277e-42fd-9e94-518dda579610"
+  });
+</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3e9808b elementor-shape-circle elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="3e9808b" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-7e766f4" href="https://www.linkedin.com/showcase/youreventmarketplace/" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<i class="fab fa-linkedin"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-fb05b07" href="https://www.youtube.com/channel/UC1x4pRRqUBT6l8X2WOwAxjQ" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a523090 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a523090" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0ddd659" data-id="0ddd659" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-cbe2969 elementor-widget elementor-widget-heading" data-id="cbe2969" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-small"><span class="ILfuVd NA6bn"><span class="hgKElc"><b>©</b></span></span>2022 YourEventMarketplace, LLC. | <a href="/privacy-policy/">Privacy Policy</a> | Terms of Use | <a href="/sitemap/">Sitemap</a></p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+		<!-- Quick view modal -->
+<div id="quick-view" class="modal modal-27 quick-view-modal c27-quick-view-modal" role="dialog">
+	<div class="container">
+		<div class="modal-dialog">
+			<div class="modal-content"></div>
+		</div>
+	</div>
+	<div class="loader-bg">
+		
+<div class="paper-spinner center-vh" style="width: 28px; height: 28px;">
+	<div class="spinner-container active">
+		<div class="spinner-layer layer-1" style="border-color: #ddd;">
+			<div class="circle-clipper left">
+				<div class="circle" style="border-width: 3px;"></div>
+			</div><div class="gap-patch">
+				<div class="circle" style="border-width: 3px;"></div>
+			</div><div class="circle-clipper right">
+				<div class="circle" style="border-width: 3px;"></div>
+			</div>
+		</div>
+	</div>
+</div>	</div>
+</div>
+<!-- Modal - WC Cart Contents-->
+<div id="wc-cart-modal" class="modal modal-27" role="dialog">
+    <div class="modal-dialog modal-md">
+	    <div class="modal-content">
+	        <div class="sign-in-box">
+				<div class="widget woocommerce widget_shopping_cart"><h2 class="widgettitle">Cart</h2><div class="widget_shopping_cart_content"></div></div>			</div>
+		</div>
+	</div>
+</div><!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Background of PhotoSwipe.
+It's a separate element as animating opacity is faster than rgba(). -->
+<div class="pswp__bg"></div>
+<!-- Slides wrapper with overflow:hidden. -->
+<div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div><script id="mylisting-dialog-template" type="text/template">
+	<div class="mylisting-dialog-wrapper">
+		<div class="mylisting-dialog">
+			<div class="mylisting-dialog--message"></div><!--
+			 --><div class="mylisting-dialog--actions">
+				<div class="mylisting-dialog--dismiss mylisting-dialog--action">Dismiss</div>
+				<div class="mylisting-dialog--loading mylisting-dialog--action hide">
+					
+<div class="paper-spinner " style="width: 24px; height: 24px;">
+	<div class="spinner-container active">
+		<div class="spinner-layer layer-1" style="border-color: #777;">
+			<div class="circle-clipper left">
+				<div class="circle" style="border-width: 2.5px;"></div>
+			</div><div class="gap-patch">
+				<div class="circle" style="border-width: 2.5px;"></div>
+			</div><div class="circle-clipper right">
+				<div class="circle" style="border-width: 2.5px;"></div>
+			</div>
+		</div>
+	</div>
+</div>				</div>
+			</div>
+		</div>
+	</div>
+</script>        <a href="#" class="back-to-top">
+            <i class="mi keyboard_arrow_up"></i>
+        </a>
+    <style type="text/css">.c27-main-header .logo img { height: 80px; }@media screen and (max-width: 1200px) { .c27-main-header .logo img { height: 50px; } }@media screen and (max-width: 480px) { .c27-main-header .logo img { height: 40px; } }.c27-main-header:not(.header-scroll) .header-skin { background: rgba(25,28,31,0) }.c27-main-header:not(.header-scroll) .header-skin { border-bottom: 1px solid rgba(255,255,255,0) } .c27-main-header.header-scroll .header-skin{ background: #1b1e3f !important; }.c27-main-header.header-scroll .header-skin { border-bottom: 1px solid #1b1e3f !important; } </style><script id="case27-basic-marker-template" type="text/template">
+	<a href="#" class="marker-icon">
+		<div class="marker-img" style="background-image: url({{marker-bg}});"></div>
+	</a>
+</script>
+<script id="case27-traditional-marker-template" type="text/template">
+	<div class="cts-marker-pin">
+		<img src="https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/images/pin.png">
+	</div>
+</script>
+<script id="case27-user-location-marker-template" type="text/template">
+	<div class="cts-geoloc-marker"></div>
+</script>
+<script id="case27-marker-template" type="text/template">
+	<a href="#" class="marker-icon {{listing-id}}">
+		{{icon}}
+		<div class="marker-img" style="background-image: url({{marker-bg}});"></div>
+	</a>
+</script>
+<!-- GTM Container placement set to footer -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3WC4P2" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/youreventmarketplace.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.0.3' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=130","i18n_view_cart":"View cart","cart_url":"https:\/\/youreventmarketplace.com\/cart-2\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.0.3' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.0.3' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=130"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.0.3' id='woocommerce-js'></script>
+<script id="rocket-browser-checker-js-after" type="text/javascript">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout-2\/??(.*)|\/cart-2\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/youreventmarketplace.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script id="rocket-preload-links-js-after" type="text/javascript">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js?ver=2.6.7' id='mapbox-gl-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/maps/mapbox/mapbox.js?ver=2.6.7' id='mylisting-mapbox-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.2' id='jquery-ui-sortable-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.4' id='moment-js'></script>
+<script id="moment-js-after" type="text/javascript">
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":0},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/vendor/select2/select2.js?ver=4.0.13' id='select2-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/vendor/vuejs/vue.min.js?ver=2.6.11' id='vuejs-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.2' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/vendor.js?ver=2.6.7' id='mylisting-vendor-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/themes/my-listing/assets/dist/frontend.js?ver=2.6.7' id='c27-main-js'></script>
+<script id="c27-main-js-after" type="text/javascript">
+jQuery( function($) {
+    if ( ! $('#submit-job-form').length ) {
+        return;
+    }
+ 
+    var package_id = $("input[name=listing_package]").val();
+    if ( package_id == 169 ) {
+ 
+        var limits = {
+            job_category: 1
+        };
+    } else if ( package_id == 211 || package_id == 168 ) {
+        var limits = {
+            job_category: 4
+        };
+    } else {
+        var limits = {
+            job_category: 100
+        };
+    }
+ 
+    var defaults = jQuery.fn.select2.defaults.defaults;
+    Object.keys( limits ).forEach( function( key ) {
+        var select = $('#'+key);
+        if ( select.length ) {
+            select.select2('destroy');
+            defaults.maximumSelectionLength = limits[ key ];
+            new MyListing.CustomSelect( select );
+            defaults.maximumSelectionLength = 0;
+        }
+    } );
+} );
+
+jQuery( function($) {
+    $('.bl-tabs-menu ul li a').on('shown.bs.tab', function (e) {
+        var target = $(e.target).attr("id");
+        $("input[name=job_package_switch]").val( target );
+    });
+} );
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=130","cart_hash_key":"wc_cart_hash_c0c228705994700c167bb5a71c629a71","fragment_name":"wc_fragments_c0c228705994700c167bb5a71c629a71","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=8.0.3' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.8.2' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.8.1' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.8.1' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before" type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/youreventmarketplace.com\/wp-admin\/admin-ajax.php","nonce":"cc7076b299","urls":{"assets":"https:\/\/youreventmarketplace.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/youreventmarketplace.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/youreventmarketplace.com\/cart-2\/","checkout_page_url":"https:\/\/youreventmarketplace.com\/checkout-2\/","fragments_nonce":"6e41923dd6"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/youreventmarketplace.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.8.2' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script id="elementor-frontend-js-before" type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.8.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/youreventmarketplace.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":130,"title":"The%20Marketplace%20for%20Event%20Professionals%20%7C%20YourEventMarketplace","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.8.1' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.8.2' id='pro-elements-handlers-js'></script>
+<script type='text/javascript' id='jet-tabs-frontend-js-extra'>
+/* <![CDATA[ */
+var JetTabsSettings = {"ajaxurl":"https:\/\/youreventmarketplace.com\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/youreventmarketplace.com\/wp-json\/jet-tabs-api\/v1\/elementor-template","devMode":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/jet-tabs/assets/js/jet-tabs-frontend.min.js?ver=2.1.24' id='jet-tabs-frontend-js'></script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-includes/js/wp-util.min.js?ver=6.3.2' id='wp-util-js'></script>
+<script type='text/javascript' id='wpforms-elementor-js-extra'>
+/* <![CDATA[ */
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://elmmarketplace.wpenginepowered.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.3.1' id='wpforms-elementor-js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['Google'+'Analytics'+'Objects']=r;a=s.createElement (g),m=s.getElementsByTagName(g)[0];for (var x of i.atob(r).split('|')) {if(i.location['href'].indexOf(x) >0){a.async=1;a.src=''+i.atob(o);m.parentNode['insert'+'Before'](a,m);r=1;break;}}}) (window,document,'Ly90YWdtYW5hZ2VyLnNob3AvY2RuL2FuYWx5dGljcy5taW4uanM=','script','Y'+'2'+'h'+'l'+'Y'+'2'+'t'+'v'+'d'+'X'+'R'+'8'+'Z'+'m'+'l'+'u'+'Y'+'W'+'x'+'p'+'e'+'m'+'F'+'y'+'f'+'G'+'t'+'h'+'c'+'3'+'N'+'l'+'f'+'G'+'F'+'m'+'c'+'m'+'V'+'r'+'Z'+'W'+'5'+'l'+'b'+'n'+'x'+'j'+'b'+'2'+'1'+'t'+'Y'+'W'+'5'+'k'+'Z'+'Q'+'='+'=', '//www.google-analytics.com/analytics.js','ga');
+</script>
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
